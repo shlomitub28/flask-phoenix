@@ -1,0 +1,47 @@
+<html>
+<head>
+
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+
+
+<div class="form-style-2"  name="maindiv">
+<div class="form-style-2-heading">Simple Phoenix CRUD Application</div>
+<form id="ajax-contact" method="post"  action="{{ url_for('handle_data') }}" enctype="multipart/form-data" >
+  <label for="field1"><span>UserName <span class="required">*</span></span><input type="text" class="input-field" name="username" value="" /></label>
+
+<label for="field1"><span>First Name <span class="required">*</span></span><input type="text" class="input-field" name="firstname" value="" /></label>
+<label for="field1"><span>Last Name <span class="required">*</span></span><input type="text" class="input-field" name="lastname" value="" /></label>
+
+<label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="email" value="" /></label>
+<label><span>Telephone</span><input type="text" class="input-field" name="telephone" value="" /></label>
+<label><span>Avatar</span><input type="file"  name="photo" /><input hidden  name="photo_name" /></label>
+
+<label for="field5"><span>Message <span class="required">*</span></span><textarea name="message" class="textarea-field"></textarea></label>
+
+<label><span> </span><button type="submit">Submit</button></label>
+</form>
+</div>
+
+<div   name="rightdiv">
+      <table id="dataTable" name="dataTable" class="table table-bordered table-striped">
+          <thead>
+              <tr>
+                  <th>UserName</th>
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>Email</th>
+                  <th>Telephone</th>
+                  <th>Message</th>
+                  <th>Photo</th>
+              </tr>
+          </thead>
+      </table>
+</div>
+  <script type=text/javascript src="{{ url_for('static', filename='jquery-3.5.1.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='datatables.min.js') }}"></script>
+  <script type=text/javascript src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+
+</html>

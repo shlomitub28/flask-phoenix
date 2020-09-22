@@ -1,0 +1,11 @@
+certifi
+chardet
+Click
+Flask
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+urllib3
+Werkzeug
