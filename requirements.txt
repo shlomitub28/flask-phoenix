@@ -9,3 +9,4 @@ MarkupSafe
 requests
 urllib3
 Werkzeug
+phoenixdb
