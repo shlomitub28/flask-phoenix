@@ -9,7 +9,7 @@ Instructions
 ```
 $ pip install -r requirements.txt
 ```
-Change to the app directory and run setup::
+Change to the app directory and run setup
 ```
 $  cd app
 $  python seteup.py
