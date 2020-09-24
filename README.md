@@ -4,7 +4,6 @@ Creating a simple CRUD web Application that store images with Flask & Apache Pho
 
 In this example i'm using Cloudera COD in aws. for dev purposes, you can use [phoenix query server](https://github.com/apache/phoenix-queryserver/tree/master/python-phoenixdb#setting-up-a-development-environment)
 
-before using this repo , install the [phoenix driver](https://github.com/apache/phoenix-queryserver/tree/master/python-phoenixdb)
 
 Instructions
 ```
