@@ -68,4 +68,4 @@ def get_image():
 
 if __name__ == "__main__":
     Schema()
-    app.run(debug=True, port=8888)
+    app.run(debug=True, port=12345)
