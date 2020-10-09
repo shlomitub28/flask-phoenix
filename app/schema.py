@@ -1,5 +1,5 @@
 import phoenixdb
-from .config import *
+from config import *
 class Schema:
     def __init__(self):
         opts = {}
