@@ -1,12 +1,12 @@
 import phoenixdb
-from config import *
+import config
 class Schema:
     def __init__(self):
         opts = {}
         opts['authentication'] = 'BASIC'
-        opts['avatica_user'] = '<cod workload username>'
-        opts['avatica_password'] = '<cod workload pw>'
-        database_url = "<cod thin jdbc url>"
+        opts['avatica_user'] = config.WORKLOAD_USER
+        opts['avatica_password'] = config.WORKLOAD_PASSWORD
+        database_url = config.OPDB_ENDPOINT
         self.TABLENAME = "users"
         self.conn = phoenixdb.connect(database_url, autocommit=True,**opts)
         self.curs = self.conn.cursor()

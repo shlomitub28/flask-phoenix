@@ -25,6 +25,6 @@ $  python setup.py
 This will create a table with some data and images in COD
 Now you can run the flask web server::
 ```
-$  FLASK_APP=app.py python -m flask run --port=8888 --host=127.0.0.1  --reload --with-threads --debugger
+$  python -m flask run --port=12345 --host=$(hostname -i) --reload --with-threads
 ```
 Now log in to http://localhost/users to view and use the web application
